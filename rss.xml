@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+
+<channel>
+  <title>Početna</title>
+  <link>https://autoskolacunj.netlify.app/index.html</link>
+  <description>Najbolja auto škola u gradu.</description>
+  <item>
+    <title>Korisne informacije</title>
+    <link>https://autoskolacunj.netlify.app/Korisne informacije</link>
+    <description>Uverite se u stručnost naših instruktora.</description>
+  </item>
+</channel>
+
+</rss>

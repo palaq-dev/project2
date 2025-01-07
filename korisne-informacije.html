@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Auto škola Čunj, najbolja auto škola u gradu!" />
+        <meta name="keywords" content="Auto škola, Polaganje, Vozački" />
+        <meta name="author" content="Dušan Jovanović" />
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+        <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+        <link rel="shortcut icon" href="assets/img/favicon-32x32.ico" />
+        <title>Auto škola Čunj | Korisne informacije</title>
+    </head>
+
+    <body>
+        <header>
+            <div class="wrapper">
+                <div class="navigacija" id="navigacija">
+                    <a href="index.html">Početna</a>
+                    <a href="korisne-informacije.html" class="active">Korisne informacije</a>
+                    <a href="o-autoru.html">O autoru</a>
+                    <a href="javascript:void(0);" class="icon" onclick="Navigacija()">
+                        <i class="fa fa-bars"></i>
+                    </a>
+                </div>
+                <div id="logo">
+                    <a href="index.html" class="py-3"><img class="slika-logo" src="assets/img/logo.jpg" alt="logo" /></a>
+                </div>
+            </div>
+        </header>
+        <main>
+            <div class="wrapper">
+                <div id="naslov-poligonske-radnje" class="mt-3">
+                    <h2>Poligonske radnje</h2>
+                </div>
+                <div id="poligonske-radnje">
+                    <div class="poligonska-radnja">
+                    </div>
+                    <div class="poligonska-radnja">
+                    </div>
+                    <div class="poligonska-radnja">
+                    </div>
+                    <div class="poligonska-radnja">
+                    </div>
+                    <div class="poligonska-radnja">
+                    </div>
+                    <div class="poligonska-radnja">
+                    </div>
+                </div>
+                <div id="naslov-kforma">
+                    <h2>Vaša pitanja možete postaviti u sledećoj formi:</h2>
+                </div>
+
+                <div class="container">
+                    <div id="errors" class="alert alert-danger" role="alert">
+                    </div>
+                    <form action="#" method="post" name="forma">
+                        <div class="alert alert-danger" id="form-alert" role="alert">
+                        </div>
+                        <div class="row">
+                            <div class="col-15">
+                                <label for="fime">Ime<span class="zvezdica">&nbsp;*</span></label>
+                            </div>
+                            <div class="col-85">
+                                <input type="text" id="fime" name="Ime" placeholder="Vaše ime..." />
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-15">
+                                <label for="email">E-mail<span class="zvezdica">&nbsp;*</span></label>
+                            </div>
+                            <div class="col-85">
+                                <input type="text" id="email" name="email" placeholder="Vaša e-mail adresa..." />
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-15">
+                                <label for="kategorija">Kategorija<span class="zvezdica">&nbsp;*</span></label>
+                            </div>
+                            <div class="col-85">
+                                <select id="kategorija" name="kategorija">
+                                    <option value="B">B</option>
+                                    <option value="B1">B1</option>
+                                    <option value="BE">BE</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-15">
+                                <label for="flexRadioDefault1">Status klijenta<span class="zvezdica">&nbsp;*</span></label>
+                            </div>
+                            <div class="col-85">
+                                <div class="form-check">
+                                    <input class="form-check-input mt-3" type="radio" name="flexRadioDefault"
+                                        id="flexRadioDefault1" data-val="S" />
+                                    <label class="form-check-label" for="flexRadioDefault1">Student</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input mt-3" type="radio" name="flexRadioDefault"
+                                        id="flexRadioDefault2" data-val="Z" />
+                                    <label class="form-check-label" for="flexRadioDefault2">Zaposlen</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input mt-3" type="radio" name="flexRadioDefault"
+                                        id="flexRadioDefault3" data-val="N" />
+                                    <label class="form-check-label" for="flexRadioDefault3">Ništa od navedenog</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-15">
+                                <label for="fileUpload">Slika lične karte<span class="zvezdica">&nbsp;*</span></label>
+                            </div>
+                            <div class="col-85">
+                                <input class="form-control" name="fileUpload" type="file" id="fileUpload" />
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-15">
+                                <label for="pitanje">Pitanje<span class="zvezdica">&nbsp;*</span></label>
+                            </div>
+                            <div class="col-85">
+                                <textarea id="pitanje" name="pitanje" placeholder="Postavite pitanje..."></textarea>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <input id="submitForm" type="submit" class="btn btn-primary" value="Pošalji" />
+                        </div>
+                    </form>
+                </div>
+                <div class="container-fluid text-center">
+                    <h3>Naša vozila:</h3>
+
+                    <div class="row">
+                        <div class="col-xs-12 col-lg-4">
+                            <input type="button" value="Prikaži sva vozila" class="btn btn-primary my-3"
+                                onclick="prikaziVozilo('sva')" />
+                        </div>
+                        <div class="col-xs-12 col-lg-4">
+                            <input type="button" value="Pogon na benzin" class="btn btn-primary my-3"
+                                onclick="prikaziVozilo('Benzin')" />
+                        </div>
+                        <div class="col-xs-12 col-lg-4">
+                            <input type="button" value="Pogon na dizel" class="btn btn-primary my-3"
+                                onclick="prikaziVozilo('Dizel')" />
+                        </div>
+                    </div>
+                    <div class="row">
+                        <ul id="automobili" class="list-group"></ul>
+                    </div>
+                </div>
+                <div id="nasa-adresa">
+                    <h4>Možete nas posetiti bilo kojim radnim danom na adresi:</h4>
+                    <p>Kraljice Natalije 23</p>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2830.5379643677197!2d20.45754071575077!3d44.810603984835964!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x475a7aaebfd24d51%3A0x89ac3e4dd8744d1f!2sKraljice%20Natalije%2C%20Beograd!5e0!3m2!1sen!2srs!4v1640743249659!5m2!1sen!2srs"
+                        width="600" height="450" allowfullscreen="" loading="lazy">
+                    </iframe>
+                </div>
+                <div id="saobracajni-znakovi">
+                    <div id="izricite-naredbe-tekst">
+                        <h2>Znakovi izričitih naredbi:</h2>
+                    </div>
+                    <div id="izricite-naredbe-znakovi">
+                        <section id="izricite-naredbe-sekcija"></section>
+                    </div>
+                    <div id="znakovi-opasnosti-tekst">
+                        <h2>Znakovi opasnosti:</h2>
+                    </div>
+                    <div id="znakovi-opasnosti-znakovi" class="mb-5">
+                        <section id="znakovi-opasnosti-sekcija"></section>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <div class="wrapper">
+                <div id="futer-tekst">
+                    <section>
+                        <article>
+                            <h3>Kontakt</h3>
+                            <ul>
+                                <li>
+                                    <p>Adresa: Kraljice Natalije 23</p>
+                                </li>
+                                <li>
+                                    <p>Broj telefona 1: +381612452391</p>
+                                </li>
+                                <li>
+                                    <p>Broj telefona 2 0112391001</p>
+                                </li>
+                            </ul>
+                        </article>
+                        <article>
+                            <h3>Društvene mreže</h3>
+                            <div id="instagram-facebook">
+                                <a href="#"><i class="fab fa-facebook-square"></i></a><br />
+                                <a href="#"><i class="fab fa-instagram-square"></i></a>
+                            </div>
+                        </article>
+                        <article>
+                            <h3>Navigacija</h3>
+                            <ul id="lista-navigacija">
+                            </ul>
+                        </article>
+                    </section>
+                    <div id="copyright" class="py-3">
+                        <p>&copy;Copyright&colon;&nbsp;Visoka&nbsp;ICT&nbsp;Škola&nbsp;2021</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <script src="https://kit.fontawesome.com/8a4dd340f5.js" crossorigin="anonymous"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+            crossorigin="anonymous"></script>
+        <script src="assets/js/main.js" type="text/javascript"></script>
+    </body>
+
+</html>

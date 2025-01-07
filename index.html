@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="description" content="Auto škola Čunj, najbolja auto škola u gradu!" />
+        <meta name="keywords" content="Auto škola, Polaganje, Vozački" />
+        <meta name="author" content="Dušan Jovanović" />
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+        <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+        <link rel="shortcut icon" href="assets/img/favicon-32x32.ico" />
+        <title>Auto škola Čunj | Početna</title>
+    </head>
+
+    <body>
+        <header>
+            <div class="wrapper">
+                <div class="navigacija" id="navigacija">
+                    <a href="index.html" class="active">Početna</a>
+                    <a href="korisne-informacije.html">Korisne informacije</a>
+                    <a href="o-autoru.html">O autoru</a>
+                    <a href="javascript:void(0);" class="icon" onclick="Navigacija()">
+                        <i class="fa fa-bars"></i>
+                    </a>
+                </div>
+                <div id="logo">
+                    <a href="index.html" class="py-3"><img class="slika-logo" src="assets/img/logo.jpg" alt="logo" /></a>
+                </div>
+            </div>
+        </header>
+        <main>
+            <div class="wrapper">
+                <div class="slideshow-container mt-3">
+
+                    <div class="mySlides fade-slider">
+                        <img src="assets/img/slajder/img1.jpg" alt="slajd-1" />
+                    </div>
+
+                    <div class="mySlides fade-slider">
+                        <img src="assets/img/slajder/img2.jpg" alt="slajd-2" />
+                    </div>
+
+                    <div class="mySlides fade-slider">
+                        <img src="assets/img/slajder/img3.jpg" alt="slajd-3" />
+                    </div>
+
+                    <a class="prev-slider" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next-slider" onclick="plusSlides(1)">&#10095;</a>
+
+                </div>
+                <br />
+
+                <div class="centriranje">
+                    <span class="tacka slide" onclick="currentSlide(1)"></span>
+                    <span class="tacka slide" onclick="currentSlide(2)"></span>
+                    <span class="tacka slide" onclick="currentSlide(3)"></span>
+                </div>
+
+                <br />
+                <div id="naslovni-tekst">
+                    <h1>
+                        Kvalitetan rad i stručnost naših instruktora naša je najbolja reklama.<br />
+                        Pri izboru auto škole najvažnije su: preporuke, stručnost i pedagoški odnos prema kandidatima.<br />
+                        Najveći broj kandidata je kod nas došao upravo zbog toga.
+                    </h1>
+                </div>
+                <div id="automobili-slika">
+                    <img src="assets/img/automobili.png" alt="automobili" />
+                </div>
+                <div id="kviz-naslov">
+                    <h3>Kviz sa pitanjima iz teorijskog ispita:</h3>
+                </div>
+                <div id="kviz" class="my-5">
+                    <div class="quiz-container" id="quiz">
+                        <div class="quiz-header">
+                            <h4 id="question">Question Text</h4>
+                            <ul>
+                                <li>
+                                    <input type="radio" name="answer" id="a" class="answer">
+                                    <label for="a" id="a_text">Answer</label>
+                                </li>
+                                <li>
+                                    <input type="radio" name="answer" id="b" class="answer">
+                                    <label for="b" id="b_text">Answer</label>
+                                </li>
+                                <li>
+                                    <input type="radio" name="answer" id="c" class="answer">
+                                    <label for="c" id="c_text">Answer</label>
+                                </li>
+                                <li>
+                                    <input type="radio" name="answer" id="d" class="answer">
+                                    <label for="d" id="d_text">Answer</label>
+                                </li>
+                            </ul>
+                        </div>
+                        <button id="submit">Odgovori</button>
+                    </div>
+                </div>
+                <div id="srednja-slika-cunjevi">
+                    <img src="assets/img/cunjevi.png" alt="srednja-slika-cunjevi" />
+                    <img src="assets/img/cunjevi.png" alt="srednja-slika-cunjevi" />
+                </div>
+                <div id="slika-kako-do-vozacke">
+                    <img src="assets/img/kako-do-dozvole.png" data-izoomify-url="assets/img/kako-do-dozvole.png"
+                        data-izoomify-magnify="1.5" alt="kako-do-vozacke" />
+                </div>
+                <section class="testim" id="testim">
+                    <div class="wrap">
+                        <span id="right-arrow" class="arrow right fa fa-chevron-right"></span>
+                        <span id="left-arrow" class="arrow left fa fa-chevron-left"></span>
+
+                        <ul class="dots" id="testim-dots">
+                            <li class="dot active"></li>
+                            <li class="dot"></li>
+                            <li class="dot"></li>
+                            <li class="dot"></li>
+                            <li class="dot"></li>
+                        </ul>
+                        <div class="cont" id="testim-content">
+                            <div class="active">
+                                <div class="img"><img src="assets/img/vozac-1.jpg" alt="mala-slika-1" /></div>
+                                <h2>Bojana Matić</h2>
+                                <p>
+                                    Sve najbolje o ovoj školi, ljudi su veoma prijatni i ljubazni, sve pohvale za
+                                    instruktora teorijske obuke Novicu
+                                    koji je sa puno strpljenja i ljubaznosti vodio nastavu. Takodje, sve pohvale Marku
+                                    instruktoru vožnje, jedan od retkih inatruktora koji će vas podučavati na pravi
+                                    način i pripremiti za sve moguće situacije koje će vas čekati kad sami sednete za volan.
+                                    Sve preporuke samo tako nastavite!
+                                </p>
+                            </div>
+                            <div>
+                                <div class="img"><img src="assets/img/vozac-2.jpg" alt="mala-slika-2" /></div>
+                                <h2>Mina Savković</h2>
+                                <p>
+                                    Veoma pozitivno iskustvo o školi. Hvala mnogo instruktoru Slaviši na strpljenju i želji
+                                    da me nauči tehnikama vožnje.
+                                    Meni je stvarno bilo zadovoljstvo da dolazim na časove i drago mi je da će mi obuka
+                                    ostati u lepom sećanju.
+                                    Želim Vam svima puno uspeha u daljem radu i sve najbolje! Svima preporučujem da se
+                                    upišu!!!
+                                </p>
+                            </div>
+                            <div>
+                                <div class="img"><img src="assets/img/vozac-3.jpg" alt="mala-slika-3" /></div>
+                                <h2>Irena Petrović</h2>
+                                <p>
+                                    Prezadovoljna sam izborom auto škole.
+                                    Posebnu zahvalnost i pohvalu upućujem instruktoru Nikoli,
+                                    koji pored toga što je profesionalac, odličan instruktor, pun strpljenja i razumevanja
+                                    kako bi pomogao
+                                    kandidatima da prevaziđu sve poteškoće tokom obuke, on vam, što je najbitnije od svega,
+                                    pomogne da pobedite strah od vožnje.
+                                    Takođe sam zahvalna instruktoru na svim iskrenim razgovorima, šalama i savetima tokom
+                                    obuke.
+                                </p>
+                            </div>
+                            <div>
+                                <div class="img"><img src="assets/img/vozac-4.jpg" alt="mala-slika-4" /></div>
+                                <h2>Valentina Krstić</h2>
+                                <p>
+                                    Odlično iskustvo zahvaljujući predavaču Milici i instruktoru Nikoli! Super saradnja,
+                                    instruktor je uvek izlazio u susret sa terminima,
+                                    ima adekvatno znanje koje odlično prenosi sa strpljenjem i razumevanjem, sve preporuke!
+                                </p>
+                            </div>
+                            <div>
+                                <div class="img"><img src="assets/img/vozac-5.jpg" alt="mala-slika-5" /></div>
+                                <h2>Sara Radovanović</h2>
+                                <p>
+                                    Instruktor Djordje, sjajan, strpljiv, sa njim je uvek opuštena atmosfera,
+                                    odlično prenosi znanje i uvek je spreman da izadje u susret.
+                                    Sve preporuke!
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </main>
+        <footer>
+            <div class="wrapper">
+                <div id="futer-tekst">
+                    <section>
+                        <article>
+                            <h3>Kontakt</h3>
+                            <ul>
+                                <li>
+                                    <p>Adresa: Kraljice Natalije 23</p>
+                                </li>
+                                <li>
+                                    <p>Broj telefona 1: +381612452391</p>
+                                </li>
+                                <li>
+                                    <p>Broj telefona 2: 0112391001</p>
+                                </li>
+                            </ul>
+                        </article>
+                        <article>
+                            <h3>Društvene mreže</h3>
+                            <div id="instagram-facebook">
+                                <a href="#"><i class="fab fa-facebook-square"></i></a><br />
+                                <a href="#"><i class="fab fa-instagram-square"></i></a>
+                            </div>
+                        </article>
+                        <article class="text-center">
+                            <h3>Navigacija</h3>
+                            <ul id="lista-navigacija">
+                            </ul>
+                        </article>
+                    </section>
+                    <div id="copyright" class="py-3">
+                        <p>&copy; Copyright&colon;&nbsp;Visoka&nbsp;ICT&nbsp;Škola&nbsp;2021</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <script src="https://kit.fontawesome.com/8a4dd340f5.js" crossorigin="anonymous"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="assets/js/jquery.izoomify.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+            crossorigin="anonymous"></script>
+        <script src="assets/js/main.js" type="text/javascript"></script>
+    </body>
+
+</html>
