@@ -1,7 +1,7 @@
 const brojNaredbi = 43;
 const brojOpasnosti = 43;
 const isKorisneInformacije = window.location.pathname == '/project2/korisne-informacije.html';
-const isPocetna = window.location.pathname == '/project2/index.html';
+const isPocetna = window.location.pathname == '/project2/index.html' || window.location.pathname == '/project2';
 const isAutor = window.location.pathname == '/project2/o-autoru.html';
 
 let navigacijaElementi = [
